@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-title>Editar Projeto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Id"
+            [(ngModel)]="register.id" name="Id">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Color"
+            [(ngModel)]="register.color" name="color">
+        </mat-form-field>
+<!--         <mat-form-field>
+            <input matInput placeholder="Part Number"
+            [(ngModel)]="register.partnumber" name="partnumber">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Cartegory Id"
+            [(ngModel)]="register.cartegoryid" name="cartegoryid">
+        </mat-form-field> -->
+<!--         <mat-form-field>
+            <input matInput placeholder="Created At"
+            [(ngModel)]="register.createdAt" name="createdAt">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Updated At"
+            [(ngModel)]="register.updatedAt" name="updatedAt">
+        </mat-form-field> -->
+    </form>
+    <button mat-raised-button (click)="updateRegister()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()" color="warn">
+       Cancelar
+    </button>
+</mat-card>
+

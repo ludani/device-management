@@ -1,0 +1,2 @@
+rodar projeto 
+ng serve
